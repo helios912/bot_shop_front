@@ -84,7 +84,6 @@ const ProductList = () => {
         tg.onEvent('mainButtonClicked', onSendData);
         return () => {
             tg.offEvent('mainButtonClicked', onSendData);
-            newItems = [];
         };
     }, [onSendData]);
 
